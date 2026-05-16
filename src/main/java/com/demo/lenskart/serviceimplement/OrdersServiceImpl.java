@@ -42,6 +42,10 @@ public class OrdersServiceImpl implements IOrdersService {
 	public ResponseEntity<String> addOrders(OrdersDTO ordersDTO) {
 		logger.info("Attempting to place order for Cart ID: {}", ordersDTO.getCartId());
 
+		if (ordersRepository.existsByCartId(ordersDTO.getCartId())) {
+			throw new LenskartApplicationException("Order already placed for this cart.");
+		}
+
 		Cart cart = cartRepository.findById(ordersDTO.getCartId()).orElseThrow(() -> {
 			logger.error("Cart not found with ID: {}", ordersDTO.getCartId());
 			return new LenskartApplicationException("Cart not found with this ID");
