@@ -1,0 +1,301 @@
+2025-07-27T00:00:51.476+05:30  INFO 17664 --- [lenskart] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-27T00:00:51.494+05:30  INFO 17664 --- [lenskart] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T00:00:51.913+05:30  INFO 17664 --- [lenskart] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T00:00:51.917+05:30  INFO 17664 --- [lenskart] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:00:51.920+05:30  INFO 17664 --- [lenskart] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T00:00:51.933+05:30  INFO 17664 --- [lenskart] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T00:00:52.036+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Starting LenskartApplication using Java 17.0.6 with PID 17664 (C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes started by akum1175 in C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart)
+2025-07-27T00:00:52.037+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-27T00:00:52.387+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T00:00:52.442+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2025-07-27T00:00:52.544+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T00:00:52.545+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T00:00:52.546+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T00:00:52.607+05:30  INFO 17664 --- [lenskart] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-27T00:00:52.608+05:30  INFO 17664 --- [lenskart] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 568 ms
+2025-07-27T00:00:52.651+05:30  INFO 17664 --- [lenskart] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T00:00:52.658+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T00:00:52.674+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T00:00:52.676+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-27T00:00:52.824+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5d9537e1
+2025-07-27T00:00:52.824+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-27T00:00:52.831+05:30  WARN 17664 --- [lenskart] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T00:00:52.833+05:30  INFO 17664 --- [lenskart] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T00:00:52.951+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T00:00:53.283+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:00:53.441+05:30  WARN 17664 --- [lenskart] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T00:00:53.581+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-27T00:00:53.595+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-27T00:00:53.602+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Started LenskartApplication in 1.609 seconds (process running for 104.232)
+2025-07-27T00:00:53.604+05:30  INFO 17664 --- [lenskart] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-27T00:01:02.423+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T00:01:02.423+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T00:01:02.424+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-27T00:01:02.754+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 232 ms
+2025-07-27T00:01:37.708+05:30  INFO 17664 --- [lenskart] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-27T00:01:37.710+05:30  INFO 17664 --- [lenskart] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T00:01:38.077+05:30  INFO 17664 --- [lenskart] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T00:01:38.079+05:30  INFO 17664 --- [lenskart] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:01:38.080+05:30  INFO 17664 --- [lenskart] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-27T00:01:38.083+05:30  INFO 17664 --- [lenskart] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-07-27T00:01:38.163+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Starting LenskartApplication using Java 17.0.6 with PID 17664 (C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes started by akum1175 in C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart)
+2025-07-27T00:01:38.164+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-27T00:01:38.487+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T00:01:38.540+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2025-07-27T00:01:38.629+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T00:01:38.630+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T00:01:38.630+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T00:01:38.678+05:30  INFO 17664 --- [lenskart] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-27T00:01:38.678+05:30  INFO 17664 --- [lenskart] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 512 ms
+2025-07-27T00:01:38.713+05:30  INFO 17664 --- [lenskart] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T00:01:38.717+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T00:01:38.727+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T00:01:38.729+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-07-27T00:01:38.882+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@64e6d5af
+2025-07-27T00:01:38.883+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-07-27T00:01:38.890+05:30  WARN 17664 --- [lenskart] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T00:01:38.892+05:30  INFO 17664 --- [lenskart] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T00:01:39.006+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T00:01:39.345+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:01:39.478+05:30  WARN 17664 --- [lenskart] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T00:01:39.599+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-27T00:01:39.613+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-27T00:01:39.619+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Started LenskartApplication in 1.484 seconds (process running for 150.249)
+2025-07-27T00:01:39.620+05:30  INFO 17664 --- [lenskart] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-27T00:01:44.541+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T00:01:44.543+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T00:01:44.546+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-07-27T00:01:44.771+05:30  INFO 17664 --- [lenskart] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 152 ms
+2025-07-27T00:06:52.865+05:30  INFO 17664 --- [lenskart] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-27T00:06:52.866+05:30  INFO 17664 --- [lenskart] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T00:06:53.203+05:30  INFO 17664 --- [lenskart] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T00:06:53.206+05:30  INFO 17664 --- [lenskart] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:06:53.206+05:30  INFO 17664 --- [lenskart] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-07-27T00:06:53.208+05:30  INFO 17664 --- [lenskart] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-07-27T00:06:53.300+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Starting LenskartApplication using Java 17.0.6 with PID 17664 (C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes started by akum1175 in C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart)
+2025-07-27T00:06:53.301+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-27T00:06:53.610+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T00:06:53.658+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 8 JPA repository interfaces.
+2025-07-27T00:06:53.758+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T00:06:53.759+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T00:06:53.759+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T00:06:53.808+05:30  INFO 17664 --- [lenskart] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-27T00:06:53.810+05:30  INFO 17664 --- [lenskart] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 507 ms
+2025-07-27T00:06:53.842+05:30  INFO 17664 --- [lenskart] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T00:06:53.847+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T00:06:53.856+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T00:06:53.857+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-07-27T00:06:54.006+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@150d513d
+2025-07-27T00:06:54.006+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-07-27T00:06:54.013+05:30  WARN 17664 --- [lenskart] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T00:06:54.016+05:30  INFO 17664 --- [lenskart] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T00:06:54.100+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T00:06:54.429+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:06:54.552+05:30  WARN 17664 --- [lenskart] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T00:06:54.651+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-27T00:06:54.663+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-27T00:06:54.667+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Started LenskartApplication in 1.4 seconds (process running for 465.297)
+2025-07-27T00:06:54.668+05:30  INFO 17664 --- [lenskart] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-27T00:11:29.021+05:30  INFO 17664 --- [lenskart] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-27T00:11:29.023+05:30  INFO 17664 --- [lenskart] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T00:11:29.358+05:30  INFO 17664 --- [lenskart] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T00:11:29.360+05:30  INFO 17664 --- [lenskart] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:11:29.360+05:30  INFO 17664 --- [lenskart] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-07-27T00:11:29.362+05:30  INFO 17664 --- [lenskart] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-07-27T00:11:29.448+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Starting LenskartApplication using Java 17.0.6 with PID 17664 (C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes started by akum1175 in C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart)
+2025-07-27T00:11:29.448+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-27T00:11:29.714+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T00:11:29.762+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 8 JPA repository interfaces.
+2025-07-27T00:11:29.837+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T00:11:29.838+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T00:11:29.838+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T00:11:29.872+05:30  INFO 17664 --- [lenskart] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-27T00:11:29.872+05:30  INFO 17664 --- [lenskart] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
+2025-07-27T00:11:29.899+05:30  INFO 17664 --- [lenskart] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T00:11:29.904+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T00:11:29.914+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T00:11:29.915+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-07-27T00:11:30.073+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@4d9d4962
+2025-07-27T00:11:30.074+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-07-27T00:11:30.082+05:30  WARN 17664 --- [lenskart] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T00:11:30.084+05:30  INFO 17664 --- [lenskart] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T00:11:30.188+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T00:11:30.545+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:11:30.651+05:30  WARN 17664 --- [lenskart] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes\com\demp\lenskart\serviceimplement\ProductServiceImpl.class]: Failed to instantiate [com.demp.lenskart.serviceimplement.ProductServiceImpl]: Constructor threw exception
+2025-07-27T00:11:30.652+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:11:30.652+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-07-27T00:11:30.744+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-07-27T00:11:30.745+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-27T00:11:30.752+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-27T00:11:30.784+05:30 ERROR 17664 --- [lenskart] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes\com\demp\lenskart\serviceimplement\ProductServiceImpl.class]: Failed to instantiate [com.demp.lenskart.serviceimplement.ProductServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.3.jar:3.5.3]
+	at com.demp.lenskart.LenskartApplication.main(LenskartApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.3.jar:3.5.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productServiceImpl' defined in file [C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes\com\demp\lenskart\serviceimplement\ProductServiceImpl.class]: Failed to instantiate [com.demp.lenskart.serviceimplement.ProductServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1745) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 27 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.demp.lenskart.serviceimplement.ProductServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	ProductRepository cannot be resolved to a type
+	CategoryRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	CategoryRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	CategoryRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+	ProductRepository cannot be resolved to a type
+
+	at com.demp.lenskart.serviceimplement.ProductServiceImpl.<init>(ProductServiceImpl.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 40 common frames omitted
+
+2025-07-27T00:11:57.147+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Starting LenskartApplication using Java 17.0.6 with PID 17664 (C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes started by akum1175 in C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart)
+2025-07-27T00:11:57.148+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-27T00:11:57.389+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T00:11:57.429+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 8 JPA repository interfaces.
+2025-07-27T00:11:57.495+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T00:11:57.496+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T00:11:57.496+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T00:11:57.529+05:30  INFO 17664 --- [lenskart] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-07-27T00:11:57.530+05:30  INFO 17664 --- [lenskart] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 380 ms
+2025-07-27T00:11:57.557+05:30  INFO 17664 --- [lenskart] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T00:11:57.559+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T00:11:57.568+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T00:11:57.569+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-07-27T00:11:57.704+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@5bb3570a
+2025-07-27T00:11:57.704+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-07-27T00:11:57.710+05:30  WARN 17664 --- [lenskart] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T00:11:57.711+05:30  INFO 17664 --- [lenskart] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T00:11:57.789+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T00:11:58.102+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:11:58.215+05:30  WARN 17664 --- [lenskart] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T00:11:58.309+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-27T00:11:58.323+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-27T00:11:58.326+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Started LenskartApplication in 1.202 seconds (process running for 768.956)
+2025-07-27T00:11:58.327+05:30  INFO 17664 --- [lenskart] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-27T00:21:23.317+05:30  INFO 17664 --- [lenskart] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-07-27T00:21:23.319+05:30  INFO 17664 --- [lenskart] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T00:21:23.648+05:30  INFO 17664 --- [lenskart] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T00:21:23.649+05:30  INFO 17664 --- [lenskart] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:21:23.650+05:30  INFO 17664 --- [lenskart] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-07-27T00:21:23.670+05:30  INFO 17664 --- [lenskart] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-07-27T00:21:23.750+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Starting LenskartApplication using Java 17.0.6 with PID 17664 (C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart\target\classes started by akum1175 in C:\Users\akum1175\Capgemini\Lal, Rohita - lenskart\lenskart)
+2025-07-27T00:21:23.751+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-27T00:21:24.052+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T00:21:24.097+05:30  INFO 17664 --- [lenskart] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 8 JPA repository interfaces.
+2025-07-27T00:21:24.172+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T00:21:24.173+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T00:21:24.174+05:30  INFO 17664 --- [lenskart] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T00:21:24.216+05:30  INFO 17664 --- [lenskart] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-07-27T00:21:24.217+05:30  INFO 17664 --- [lenskart] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 462 ms
+2025-07-27T00:21:24.248+05:30  INFO 17664 --- [lenskart] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T00:21:24.251+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T00:21:24.262+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T00:21:24.264+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-07-27T00:21:24.392+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@71a757
+2025-07-27T00:21:24.392+05:30  INFO 17664 --- [lenskart] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-07-27T00:21:24.397+05:30  WARN 17664 --- [lenskart] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T00:21:24.399+05:30  INFO 17664 --- [lenskart] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T00:21:24.481+05:30  INFO 17664 --- [lenskart] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T00:21:24.819+05:30  INFO 17664 --- [lenskart] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T00:21:24.936+05:30  WARN 17664 --- [lenskart] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T00:21:25.046+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-27T00:21:25.061+05:30  INFO 17664 --- [lenskart] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-27T00:21:25.067+05:30  INFO 17664 --- [lenskart] [restartedMain] com.demp.lenskart.LenskartApplication    : Started LenskartApplication in 1.344 seconds (process running for 1335.697)
+2025-07-27T00:21:25.068+05:30  INFO 17664 --- [lenskart] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
