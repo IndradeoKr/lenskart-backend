@@ -28,7 +28,7 @@ public class Orders {
 	@Enumerated(EnumType.STRING)
 	private Status status;
 
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "cart_id")
 	private Cart cart;
 
