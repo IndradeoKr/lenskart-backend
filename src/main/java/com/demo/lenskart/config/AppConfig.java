@@ -23,15 +23,41 @@ public class AppConfig implements WebMvcConfigurer {
         String username = System.getenv("DB_USERNAME");
         String password = System.getenv("DB_PASSWORD");
 
-        // Use defaults if env vars are missing (for local dev)
-        if (dbUrl == null) dbUrl = "jdbc:postgresql://localhost:5432/Lenskart";
+        // Use defaults for local development
+        if (dbUrl == null) {
+            dbUrl = "jdbc:postgresql://localhost:5432/Lenskart";
+        }
+
+        // If it's a URI style (postgres://user:password@host:port/db)
+        if (dbUrl.startsWith("postgres://") || dbUrl.startsWith("jdbc:postgresql://")) {
+            try {
+                // Remove jdbc: prefix if present for parsing
+                String cleanUrl = dbUrl.replace("jdbc:postgresql://", "").replace("postgres://", "");
+                
+                // Format: user:password@host:port/db
+                String[] firstSplit = cleanUrl.split("@");
+                if (firstSplit.length == 2) {
+                    // We have credentials in the URL
+                    String credentials = firstSplit[0];
+                    String hostAndDb = firstSplit[1];
+                    
+                    String[] creds = credentials.split(":");
+                    if (username == null || username.isEmpty()) username = creds[0];
+                    if (password == null || password.isEmpty()) password = creds[1];
+                    
+                    // Reconstruct a clean JDBC URL: jdbc:postgresql://host:port/db
+                    dbUrl = "jdbc:postgresql://" + hostAndDb;
+                } else {
+                    // No credentials in URL, just ensure it starts with jdbc:postgresql://
+                    dbUrl = "jdbc:postgresql://" + cleanUrl;
+                }
+            } catch (Exception e) {
+                // Fallback to whatever was provided if parsing fails
+            }
+        }
+
         if (username == null) username = "postgres";
         if (password == null) password = "password";
-
-        // AUTO-FIX: If the URL starts with postgres://, convert to jdbc:postgresql://
-        if (dbUrl.startsWith("postgres://")) {
-            dbUrl = dbUrl.replace("postgres://", "jdbc:postgresql://");
-        }
 
         return DataSourceBuilder.create()
                 .url(dbUrl)
