@@ -28,36 +28,38 @@ public class AppConfig implements WebMvcConfigurer {
             dbUrl = "jdbc:postgresql://localhost:5432/Lenskart";
         }
 
-        // If it's a URI style (postgres://user:password@host:port/db)
+        System.out.println("DEBUG: Processing DB_URL: " + dbUrl);
+
         if (dbUrl.startsWith("postgres://") || dbUrl.startsWith("jdbc:postgresql://")) {
             try {
-                // Remove jdbc: prefix if present for parsing
-                String cleanUrl = dbUrl.replace("jdbc:postgresql://", "").replace("postgres://", "");
+                // Use java.net.URI to parse the string reliably
+                String uriString = dbUrl.startsWith("jdbc:") ? dbUrl.substring(5) : dbUrl;
+                java.net.URI uri = new java.net.URI(uriString);
                 
-                // Format: user:password@host:port/db
-                String[] firstSplit = cleanUrl.split("@");
-                if (firstSplit.length == 2) {
-                    // We have credentials in the URL
-                    String credentials = firstSplit[0];
-                    String hostAndDb = firstSplit[1];
-                    
-                    String[] creds = credentials.split(":");
+                String host = uri.getHost();
+                int port = uri.getPort();
+                String path = uri.getPath();
+                String userInfo = uri.getUserInfo();
+
+                if (userInfo != null && userInfo.contains(":")) {
+                    String[] creds = userInfo.split(":");
                     if (username == null || username.isEmpty()) username = creds[0];
                     if (password == null || password.isEmpty()) password = creds[1];
-                    
-                    // Reconstruct a clean JDBC URL: jdbc:postgresql://host:port/db
-                    dbUrl = "jdbc:postgresql://" + hostAndDb;
-                } else {
-                    // No credentials in URL, just ensure it starts with jdbc:postgresql://
-                    dbUrl = "jdbc:postgresql://" + cleanUrl;
                 }
+
+                // Construct a standard JDBC URL without user info
+                dbUrl = "jdbc:postgresql://" + host + (port != -1 ? ":" + port : "") + path;
+                
             } catch (Exception e) {
-                // Fallback to whatever was provided if parsing fails
+                System.err.println("DEBUG: Failed to parse DB_URL URI: " + e.getMessage());
             }
         }
 
         if (username == null) username = "postgres";
         if (password == null) password = "password";
+
+        System.out.println("DEBUG: Final JDBC URL: " + dbUrl);
+        System.out.println("DEBUG: Final Username: " + username);
 
         return DataSourceBuilder.create()
                 .url(dbUrl)
