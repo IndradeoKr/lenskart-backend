@@ -191,6 +191,7 @@ public class CustomerServiceImpl implements ICustomerService {
 
 		UserDTO userDTO = new UserDTO();
 		userDTO.setUserid(user.getUserid());
+		userDTO.setUserName(user.getUserName());
 		userDTO.setName(user.getName());
 		userDTO.setAddress(user.getAddress());
 		userDTO.setEmail(user.getEmail());

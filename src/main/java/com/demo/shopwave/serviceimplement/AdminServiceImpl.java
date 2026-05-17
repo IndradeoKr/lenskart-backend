@@ -148,6 +148,7 @@ public class AdminServiceImpl implements IAdminService {
 
 		UserDTO adminDTO = new UserDTO();
 		adminDTO.setUserid(admin.getUserid());
+		adminDTO.setUserName(admin.getUserName());
 		adminDTO.setName(admin.getName());
 		adminDTO.setAddress(admin.getAddress());
 		adminDTO.setEmail(admin.getEmail());
