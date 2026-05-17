@@ -1,8 +1,7 @@
 package com.demo.shopwave.config;
 
 import java.util.Arrays;
-import java.util.List;
-
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -16,6 +15,16 @@ import javax.sql.DataSource;
 @Configuration
 public class AppConfig {
 
+    // Inject database credentials dynamically from your application properties files
+    @Value("${spring.datasource.url:jdbc:postgresql://localhost:5432/Lenskart}")
+    private String defaultDbUrl;
+
+    @Value("${spring.datasource.username:postgres}")
+    private String defaultUsername;
+
+    @Value("${spring.datasource.password:password}")
+    private String defaultPassword;
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -23,20 +32,25 @@ public class AppConfig {
 
     @Bean
     public DataSource dataSource() {
+        // Fetch from environments (Render, Heroku, etc.)
         String dbUrl = System.getenv("DB_URL");
         String username = System.getenv("DB_USERNAME");
         String password = System.getenv("DB_PASSWORD");
 
-        // Use defaults for local development
-        if (dbUrl == null) {
-            dbUrl = "jdbc:postgresql://localhost:5432/Lenskart";
+        // Fall back cleanly to the injected properties if environment variables are not set
+        if (dbUrl == null || dbUrl.isEmpty()) {
+            dbUrl = defaultDbUrl;
+        }
+        if (username == null || username.isEmpty()) {
+            username = defaultUsername;
+        }
+        if (password == null || password.isEmpty()) {
+            password = defaultPassword;
         }
 
-        System.out.println("DEBUG: Processing DB_URL: " + dbUrl);
-
+        // Support cloud database connections (postgres:// or jdbc:postgresql:// with credentials inside URL)
         if (dbUrl.startsWith("postgres://") || dbUrl.startsWith("jdbc:postgresql://")) {
             try {
-                // Use java.net.URI to parse the string reliably
                 String uriString = dbUrl.startsWith("jdbc:") ? dbUrl.substring(5) : dbUrl;
                 java.net.URI uri = new java.net.URI(uriString);
                 
@@ -47,23 +61,17 @@ public class AppConfig {
 
                 if (userInfo != null && userInfo.contains(":")) {
                     String[] creds = userInfo.split(":");
-                    if (username == null || username.isEmpty()) username = creds[0];
-                    if (password == null || password.isEmpty()) password = creds[1];
+                    username = creds[0];
+                    password = creds[1];
                 }
 
-                // Construct a standard JDBC URL without user info
+                // Construct clean standard JDBC URL
                 dbUrl = "jdbc:postgresql://" + host + (port != -1 ? ":" + port : "") + path;
                 
             } catch (Exception e) {
-                System.err.println("DEBUG: Failed to parse DB_URL URI: " + e.getMessage());
+                System.err.println("Failed to parse cloud DB_URL: " + e.getMessage());
             }
         }
-
-        if (username == null) username = "postgres";
-        if (password == null) password = "password";
-
-        System.out.println("DEBUG: Final JDBC URL: " + dbUrl);
-        System.out.println("DEBUG: Final Username: " + username);
 
         return DataSourceBuilder.create()
                 .url(dbUrl)
