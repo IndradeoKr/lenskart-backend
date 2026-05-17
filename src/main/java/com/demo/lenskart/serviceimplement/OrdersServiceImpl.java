@@ -175,6 +175,7 @@ public class OrdersServiceImpl implements IOrdersService {
 			if (order.getStatus() != null) {
 				dto.setStatus(Status.valueOf(order.getStatus().name()));
 			}
+			dto.setCustomerEmail(order.getUserId() != null ? order.getUserId().getEmail() : null);
 			dtos.add(dto);
 		}
 
@@ -206,6 +207,7 @@ public class OrdersServiceImpl implements IOrdersService {
 			if (order.getStatus() != null) {
 				dto.setStatus(Status.valueOf(order.getStatus().name()));
 			}
+			dto.setCustomerEmail(order.getUserId() != null ? order.getUserId().getEmail() : null);
 			dtos.add(dto);
 		}
 
