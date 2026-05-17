@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demp</groupId>
-	<artifactId>lenskart</artifactId>
+	<artifactId>shopwave</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lenskart</name>
+	<name>shopwave</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
 	<licenses>
