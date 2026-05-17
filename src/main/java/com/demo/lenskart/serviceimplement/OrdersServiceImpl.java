@@ -119,6 +119,7 @@ public class OrdersServiceImpl implements IOrdersService {
 		if (updated.getStatus() != null) {
 			updatedDTO.setStatus(Status.valueOf(updated.getStatus().name()));
 		}
+		updatedDTO.setCustomerEmail(updated.getUserId() != null ? updated.getUserId().getEmail() : null);
 
 		logger.info("Order updated successfully for Order ID: {}", updated.getOrderId());
 		return ResponseEntity.status(HttpStatus.OK).body(updatedDTO);

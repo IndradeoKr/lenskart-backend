@@ -20,6 +20,8 @@ public class OrdersDTO {
 	@NotNull(message = "Cart must be associated with order")
 	private int cartId;
 
+	private String customerEmail;
+
 	// Getters and setters
 	public int getOrderId() {
 		return orderId;
@@ -51,5 +53,13 @@ public class OrdersDTO {
 
 	public void setCartId(int cartId) {
 		this.cartId = cartId;
+	}
+
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
+
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
 	}
 }
