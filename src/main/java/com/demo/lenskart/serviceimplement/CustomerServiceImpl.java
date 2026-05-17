@@ -39,15 +39,15 @@ public class CustomerServiceImpl implements ICustomerService {
 		List<User> existingUsers = userRepository.findAll();
 		logger.debug("Retrieved {} users from repository", existingUsers.size());
 
-		for (User user : existingUsers) {
-			logger.debug("Checking user with ID: {}, Role: {}", user.getUserid(), user.getRole());
+		// for (User user : existingUsers) {
+		// 	logger.debug("Checking user with ID: {}, Role: {}", user.getUserid(), user.getRole());
 
-			if (user.getRole().equals(CUSTOMER_ROLE)) {
-				logger.warn("Attempt to register another customer when one already exists. Existing customer ID: {}",
-						user.getUserid());
-				throw new LenskartApplicationException("Only one customer is allowed");
-			}
-		}
+		// 	if (user.getRole().equals(CUSTOMER_ROLE)) {
+		// 		logger.warn("Attempt to register another customer when one already exists. Existing customer ID: {}",
+		// 				user.getUserid());
+		// 		throw new LenskartApplicationException("Only one customer is allowed");
+		// 	}
+		// }
 
 		User user = new User();
 		user.setUserName(customerDTO.getUserName());
