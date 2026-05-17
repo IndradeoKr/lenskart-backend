@@ -61,6 +61,7 @@ public class LoginController {
 
         UserDTO dto = new UserDTO();
         dto.setUserid(user.getUserid());
+        dto.setUserName(user.getUserName());
         dto.setName(user.getName());
         dto.setEmail(user.getEmail());
         dto.setPhoneNumber(user.getPhoneNumber());
